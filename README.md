@@ -32,9 +32,13 @@ create table Employee (
 );
 
 insert into Employee values(1,"Tom",25,1234567890,"tom@gmail.com","Hollywood Street LA");
+
 insert into Employee values(2,"Dick",30,09876543321,"dick@gmail.com","baker Street UK");
+
 insert into Employee values(3,"Harry",35,1234567890,"harry@gmail.com","Lombord Street NYC");
+
 insert into Employee values(4,"Harry",40,1234567890,"harry@gmail.com","Lombord Street NYC");
+
 insert into Employee values(2,"Dick",30,09876543321,"dick@gmail.com","baker Street UK");
 
 -- select * from Employee;
@@ -66,9 +70,13 @@ insert into Employee values(2,"Dick",30,09876543321,"dick@gmail.com","baker Stre
 -- Where Age >25 or EmpName="Harry"
 
 -- select * from Employee
+
 -- select distinct * from Employee
+
 -- select distinct count(*) from Employee -- Not working 
+
 -- select count (distinct EmpID) from Employee --working
+
 -- select count (distinct EmpName) from Employee 
 
 
@@ -85,9 +93,13 @@ create table Employee (
 );
 
 insert into Employee values(1,"Tom",25,1234567890,"tom@gmail.com","Hollywood Street LA");
+
 insert into Employee values(22,"Dick",30,09876543321,"dick@gmail.com","baker Street UK");
+
 insert into Employee values(43,"Harry",35,1234567890,"harry@gmail.com","Lombord Street NYC");
+
 insert into Employee values(34,"Harry",40,1234567890,"harry@gmail.com","Lombord Street NYC");
+
 insert into Employee values(2,"Dick",30,09876543322,"dick@gmail.com","baker Street UK");
 
 --select * from Employee;
@@ -115,19 +127,31 @@ create table Customer (
 );
 
 insert into Customer values(10,"Tom",1234567890,"aa@gmail.com","USA","LA");
+
 insert into Customer values(20,"Tommy",1234567891,"bb@gmail.com","UK","London");
+
 insert into Customer values(30,"Thomas",1234567892,"cc@gmail.com","Germany","Berlin");
+
 insert into Customer values(40,"Steve",1234567893,"dd@gmail.com","Brazil","ABC");
+
 insert into Customer values(50,"Peter",1234567894,"ee@gmail.com","India","Banglore");
+
 insert into Customer values(60,"John",1234567895,"ff@gmail.com","Australia","Sydney");
+
 insert into Customer values(70,"ChrisW",1234567896,"gg@gmail.com","Germany","Munich");
 
 --select * from Customer;
+
 --select * from Customer where country = "Germany" or Country="India";
+
 --select * from Customer where Not country = "Germany";
+
 --select * from Customer where country = "Germany" and (city="Berlin" or city="Sydney");
+
 --select * from Customer where country = "Germany" or (city="Berlin" or city="Sydney");
+
 --select * from Customer where country = "Germany" and (city="Berlin" or city="Munich");
+
  select * from Customer where country = "Germany" and not country = "USA"
  
 —————————3——————

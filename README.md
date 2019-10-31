@@ -10,7 +10,10 @@ NO SQL - MongoDB,CouchDB
 https://www.youtube.com/watch?v=LOa-ujO2wEk&list=PLFGoYjJG_fqqZy9yuDVIO-2AppE60B4AS&index=3
 
 https://www.jdoodle.com/
+
+
 ------------Sample----------
+
 
 create table calc(x int, y int);
 

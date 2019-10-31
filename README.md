@@ -108,6 +108,7 @@ insert into Employee values(2,"Dick",30,09876543322,"dick@gmail.com","baker Stre
 --select * from Employee where Age>30 or EmpID>22
 --select * from Employee where Age>25 and EmpID>20 and PhoneNumber = 09876543321
 select * from Employee w  here age>28 and age<40
+
 ————————
 create table Customer (
     ID int,
@@ -133,6 +134,7 @@ insert into Customer values(70,"ChrisW",1234567896,"gg@gmail.com","Germany","Mun
 --select * from Customer where country = "Germany" or (city="Berlin" or city="Sydney");
 --select * from Customer where country = "Germany" and (city="Berlin" or city="Munich");
  select * from Customer where country = "Germany" and not country = "USA"
+ 
 —————————3——————
 
 

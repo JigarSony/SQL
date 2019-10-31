@@ -103,15 +103,25 @@ insert into Employee values(34,"Harry",40,1234567890,"harry@gmail.com","Lombord 
 insert into Employee values(2,"Dick",30,09876543322,"dick@gmail.com","baker Street UK");
 
 --select * from Employee;
+
 --select * from Employee order by EmpID;
+
 --select * from Employee order by EmpID ASC;
+
 --select * from Employee order by EmpID DESC;
+
 --select * from Employee order by Age;
+
 --select * from Employee order by Age DESC;
+
 --select * from Employee order by EmpName,Age;
+
 --select * from Employee where Age>30 and EmpID>22
+
 --select * from Employee where Age>30 or EmpID>22
+
 --select * from Employee where Age>25 and EmpID>20 and PhoneNumber = 09876543321
+
 select * from Employee w  here age>28 and age<40
 
 ————————

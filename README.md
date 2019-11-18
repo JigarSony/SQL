@@ -1,26 +1,25 @@
 # SQL
-Basic handson SQL
 
+# Part-1
+Basic handson SQL
 
 Naveen SQL
 
 SQL - Structured Query Language
 NO SQL - MongoDB,CouchDB
 
-https://www.youtube.com/watch?v=LOa-ujO2wEk&list=PLFGoYjJG_fqqZy9yuDVIO-2AppE60B4AS&index=3
+[PlayList](https://www.youtube.com/watch?v=LOa-ujO2wEk&list=PLFGoYjJG_fqqZy9yuDVIO-2AppE60B4AS&index=3)
 
-https://www.jdoodle.com/
+[OnlineCompiler](https://www.jdoodle.com/)
 
-
-------------Sample----------
-
+# Query
 
 create table calc(x int, y int);
 
 insert into calc values(10, 25);
 
 select x,y, (x+y) from calc;
-------------------------
+__________________________________________________
 
 create table Employee (
     EmpID varchar(255),
@@ -41,47 +40,46 @@ insert into Employee values(4,"Harry",40,1234567890,"harry@gmail.com","Lombord S
 
 insert into Employee values(2,"Dick",30,09876543321,"dick@gmail.com","baker Street UK");
 
--- select * from Employee;
+select * from Employee;
 
--- select count(*) from Employee;
+select count(*) from Employee;
 
--- select  * from Employee 
--- Where EmpName="Dick"
+select  * from Employee 
+Where EmpName="Dick"
 
--- select  * from Employee 
--- Where Age in 31
+select  * from Employee 
+Where Age in 31
 
--- select * from Employee
--- where EmpName = "Harry" and Age = 40
+select * from Employee
+where EmpName = "Harry" and Age = 40
 
--- select * from Employee
--- Where Age >25
+select * from Employee
+Where Age >25
 
--- select * from Employee
--- Where Age >25 and EmpName="Harry"
+select * from Employee
+Where Age >25 and EmpName="Harry"
 
--- select * from Employee
--- Where Age >25 or EmpName="Harry"
+select * from Employee
+Where Age >25 or EmpName="Harry"
 
--- select count(*) from Employee
--- Where Age >25 and EmpName="Harry"
+select count(*) from Employee
+Where Age >25 and EmpName="Harry"
 
--- select count(*) from Employee
--- Where Age >25 or EmpName="Harry"
+select count(*) from Employee
+Where Age >25 or EmpName="Harry"
 
--- select * from Employee
+select * from Employee
 
--- select distinct * from Employee
+select distinct * from Employee
 
--- select distinct count(*) from Employee -- Not working 
+select distinct count(*) from Employee -- Not working 
 
--- select count (distinct EmpID) from Employee --working
+select count (distinct EmpID) from Employee --working
 
--- select count (distinct EmpName) from Employee 
+select count (distinct EmpName) from Employee 
 
-
--------------------PART--2---------------------
-
+-----
+# Part - 2
 
 create table Employee (
     EmpID varchar(255),
@@ -102,31 +100,28 @@ insert into Employee values(34,"Harry",40,1234567890,"harry@gmail.com","Lombord 
 
 insert into Employee values(2,"Dick",30,09876543322,"dick@gmail.com","baker Street UK");
 
---select * from Employee;
+select * from Employee;
 
---select * from Employee order by EmpID;
+select * from Employee order by EmpID;
 
---select * from Employee order by EmpID ASC;
+select * from Employee order by EmpID ASC;
 
---select * from Employee order by EmpID DESC;
+select * from Employee order by EmpID DESC;
 
---select * from Employee order by Age;
+select * from Employee order by Age;
 
---select * from Employee order by Age DESC;
+select * from Employee order by Age DESC;
 
---select * from Employee order by EmpName,Age;
+select * from Employee order by EmpName,Age;
 
---select * from Employee where Age>30 and EmpID>22
+select * from Employee where Age>30 and EmpID>22
 
---select * from Employee where Age>30 or EmpID>22
+select * from Employee where Age>30 or EmpID>22
 
---select * from Employee where Age>25 and EmpID>20 and PhoneNumber = 09876543321
+select * from Employee where Age>25 and EmpID>20 and PhoneNumber = 09876543321
 
 select * from Employee w  here age>28 and age<40
-
-————————
-
-
+____
 create table Customer (
     ID int,
     Name varchar(255),
@@ -150,42 +145,18 @@ insert into Customer values(60,"John",1234567895,"ff@gmail.com","Australia","Syd
 
 insert into Customer values(70,"ChrisW",1234567896,"gg@gmail.com","Germany","Munich");
 
---select * from Customer;
+select * from Customer;
 
---select * from Customer where country = "Germany" or Country="India";
+select * from Customer where country = "Germany" or Country="India";
 
---select * from Customer where Not country = "Germany";
+select * from Customer where Not country = "Germany";
 
---select * from Customer where country = "Germany" and (city="Berlin" or city="Sydney");
+select * from Customer where country = "Germany" and (city="Berlin" or city="Sydney");
 
---select * from Customer where country = "Germany" or (city="Berlin" or city="Sydney");
+select * from Customer where country = "Germany" or (city="Berlin" or city="Sydney");
 
---select * from Customer where country = "Germany" and (city="Berlin" or city="Munich");
+select * from Customer where country = "Germany" and (city="Berlin" or city="Munich");
 
- select * from Customer where country = "Germany" and not country = "USA"
+select * from Customer where country = "Germany" and not country = "USA"
  
-—————————3——————
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Part - 3

@@ -41,9 +41,7 @@ create table Employee(
 );
 
 
-
 ——————To Insert data into table——————
-
 
 
 
@@ -59,13 +57,16 @@ insert into Employee values(2, "Steave", 35, 9890000000, "steave@gmail.com", "20
 
 —————To Retrieve all data from Table————
 
-* Means all the data
+ "*" Means all the data
+
 -- select * from Employee;
 
 —————To Get Count of rows———
+
 -- select count(*) from Employee;
 
 ———Filter : Where—————
+
 select * from Employee where EmpName="Tom";
 
 ———For Comment in Doodle——— cmd+/————

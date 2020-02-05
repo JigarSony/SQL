@@ -6,7 +6,8 @@ Basic handson SQL
 Naveen SQL
 
 SQL - Structured Query Language
-NO SQL - MongoDB,CouchDB
+
+NO SQL - cassandra,MongoDB,CouchDB
 
 [PlayList](https://www.youtube.com/playlist?list=PLFGoYjJG_fqqZy9yuDVIO-2AppE60B4AS)
 
@@ -37,9 +38,13 @@ create table Employee(
 );
 ——————To Insert data into table——————
 insert into Employee values(1, "Tom", 25, 9890000000, "tom@gmail.com", "1, hollywood avenue,LA");
+
 insert into Employee values(2, "Steave", 35, 9890000000, "steave@gmail.com", "20, 2nd street ,SFO");
+
 insert into Employee values(3, "Peter", 45, 9890000000, "peterdsouza@gmail.com", "villa house ,NY");
+
 insert into Employee values(4, "Peter", 55, 9890000001, "peterparker@gmail.com", "villa house ,NY");
+
 insert into Employee values(2, "Steave", 35, 9890000000, "steave@gmail.com", "20, 2nd street ,SFO");
 
 —————To Retrieve all data from Table————

@@ -13,6 +13,8 @@ NO SQL - cassandra,MongoDB,CouchDB
 
 [OnlineCompiler](https://www.jdoodle.com/)
 
+![](images/SQL-1.png)
+
 # Query
 
 create table calc(x int, y int);

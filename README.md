@@ -30,6 +30,7 @@ __________________________________________________
 
 ————To Create Table—————
 
+
 create table Employee(
     EmpID varchar(255),
     EmpName varchar(255),
@@ -38,7 +39,14 @@ create table Employee(
     EmailID varchar(255),
     Address varchar(255)
 );
+
+
+
 ——————To Insert data into table——————
+
+
+
+
 insert into Employee values(1, "Tom", 25, 9890000000, "tom@gmail.com", "1, hollywood avenue,LA");
 
 insert into Employee values(2, "Steave", 35, 9890000000, "steave@gmail.com", "20, 2nd street ,SFO");
@@ -65,6 +73,7 @@ select * from Employee where EmpName="Tom";
 -- select  * from Employee Where Age in 31
 
 —————and operator :: both of them——————
+
 --select * from Employee where EmpName="Peter" and Age=45;
 
 --select * from Employee where Age>25;
@@ -77,6 +86,7 @@ select * from Employee where EmpName="Tom";
 -- Where Age >25 and EmpName="Harry"
 
 ——————or operators ::Either of them———————
+
 --select * from Employee where Age>46 and EmpName="Peter";
 
 -- select * from Employee
@@ -90,6 +100,7 @@ select * from Employee where EmpName="Tom";
 
 
 ———distinct :: avoid duplicates values -- only unique value—————
+
 --if any duplicate row and you call select * from Employee; then duplicate row also display
 --how to avoid?
 

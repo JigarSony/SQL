@@ -448,3 +448,42 @@ select salary from Employee order by salary desc LIMIT 3-1,1;
 select TOP 2 from Employee;
 
 select * from Employee where ROWNUM<=2;
+
+# Part - 5
+
+## NULL constraint
+
+## SQL constraint: Limitation, Rules, Controlling data, Insert, Fetch data
+
+> Create table Employee
+> (
+>    ID int NOT NULL,
+>    FirstName varchar(255) NOT NULL,
+>    LastName varchar(255) NOT NULL,
+>    Age int
+> );
+
+insert into Employee values(1, "Jack", "Ma", 25);
+
+insert into Employee values(NULL, "Tom", "Pa", 35);
+
+### NOT NULL constraint failed: Employee.ID
+
+insert into Employee values(2, NULL, "Pa", 35);
+
+### NOT NULL constraint failed: Employee.FirstName
+
+### No Rest on Age
+
+insert into Employee values(2, "Peter", "Pa", NULL);
+
+> 1|Jack|Ma|25
+> 2|Peter|Pa|
+
+select * from Employee;
+
+## Primary Key : Constraint
+
+> Must contain Unique value
+> Not contain Null Value
+> Can have only 1 Primary Key -- But Primary key hold single/multiple column

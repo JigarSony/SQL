@@ -71,51 +71,51 @@ __________________________________________________
 
 # "*" Means all the data
 
-select * from Employee;
+    select * from Employee;
 
 __________________________________________________
 
 # To Get Count of rows
 
-select count(*) from Employee;
+    select count(*) from Employee;
 
 __________________________________________________
 
 # Filter : Where
 
-select * from Employee where EmpName="Tom";
+    select * from Employee where EmpName="Tom";
 
 __________________________________________________
 
 # For Comment in Doodle cmd+/
 
-select  * from Employee Where Age in 31
+    select  * from Employee Where Age in 31
 
 __________________________________________________
 
 # And operator both of them
 
-select * from Employee where EmpName="Peter" and Age=45;
+    select * from Employee where EmpName="Peter" and Age=45;
 
-select * from Employee where Age>25;
+    select * from Employee where Age>25;
 
-select * from Employee where Age>25 and EmpName="Peter";
+    select * from Employee where Age>25 and EmpName="Peter";
 
-select * from Employee Where Age >25
+    select * from Employee Where Age >25
 
-select * from Employee Where Age >25 and EmpName="Harry"
+    select * from Employee Where Age >25 and EmpName="Harry"
 
 __________________________________________________
 
 # OR operators Either of them
 
-select * from Employee where Age>46 and EmpName="Peter";
+    select * from Employee where Age>46 and EmpName="Peter";
 
-select * from Employee Where Age >25 or EmpName="Harry"
+    select * from Employee Where Age >25 or EmpName="Harry"
 
-select count(*) from Employee Where Age >25 and EmpName="Harry"
+    select count(*) from Employee Where Age >25 and EmpName="Harry"
 
-select count(*) from Employee Where Age >25 or EmpName="Harry"
+    select count(*) from Employee Where Age >25 or EmpName="Harry"
 
 
 __________________________________________________
@@ -124,13 +124,13 @@ __________________________________________________
 
 # if any duplicate row and you call select * from Employee; then duplicate row also display how to avoid?
 
-select distinct * from Employee;
+    select distinct * from Employee;
 
-select distinct count(*) from Employee;
+    select distinct count(*) from Employee;
 
-select count(distinct EmpID) from Employee;
+    select count(distinct EmpID) from Employee;
 
-select count(distinct EmpName) from Employee;
+    select count(distinct EmpName) from Employee;
 
 __________________________________________________
 
@@ -441,13 +441,13 @@ select salary from Employee order by salary desc LIMIT 2-1,1;
 
 ### 3nd High salary
 
-select salary from Employee order by salary desc LIMIT 3-1,1;
+    select salary from Employee order by salary desc LIMIT 3-1,1;
 
 ### TOP and ROWNUM : Deprecated
 
-select TOP 2 from Employee;
+    select TOP 2 from Employee;
 
-select * from Employee where ROWNUM<=2;
+    select * from Employee where ROWNUM<=2;
 
 # Part - 5
 
@@ -488,7 +488,7 @@ insert into Employee values(2, "Peter", "Pa", NULL);
 
 > 2|Peter|Pa|
 
-select * from Employee;
+    select * from Employee;
 
 ## Primary Key : Constraint
 

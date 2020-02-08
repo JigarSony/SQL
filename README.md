@@ -279,3 +279,90 @@ __________________________________________________
 
  
 # Part - 3
+
+create table Customer
+
+(
+
+    ID int,
+    
+    Name varchar(255),
+    
+    PhoneNumber int,
+    
+    EmailID varchar(255),
+    
+    Country varchar(255),
+    
+    City varchar(255)
+    
+);
+
+insert into Customer values(10, "Tom", 1234567890, "a@gmail.com", "USA", "LA");
+
+insert into Customer values(20, "Tommy", 1234567891, "b@gmail.com", "USA", "NY");
+
+insert into Customer values(30, "Thomasy", 1234567892, "c@gmail.com", "IND", "AHD");
+
+insert into Customer values(40, "Steve", 1234567893, "d@gmail.com", "UK", "LD");
+
+insert into Customer values(50, "Jeter", 1234567894, "e@gmail.com", "CA", "OT");
+
+insert into Customer values(60, "Johny", 1234567895, "f@gmail.com", "NZ", "ABC");
+
+insert into Customer values(70, "omit", 1234567896, "g@gmail.com", NULL, "ABD");
+
+select * from Customer;
+
+____________________________________
+
+## LIKE KeyWord: Use to find out pattern with where clause
+
+## % And _
+
+__________________________________
+
+# LIKE
+
+# starting with character: J%
+
+select * from Customer where Name LIKE 'T%';
+select * from Customer where Name LIKE 'J%';
+
+___________________________
+
+# Ending with character: %Y
+
+select * from Customer where Name LIKE '%y';
+
+___________________________________
+
+# contains characters at any position %om%
+
+select * from Customer where Name LIKE '%om%';
+
+# _anycahr%
+## Here the first character can be anything and secon character must be 'o' and rest can be anything
+
+select * from Customer where Name LIKE '_o%';
+
+select * from Customer where Name LIKE '_o_%';
+
+# at least 3 char 
+
+select * from Customer where Name LIKE 'T__%';
+
+## start with t and ending with y
+
+select * from Customer where Name LIKE 'T%y';
+
+## IS NULL or IS NOT NULL
+
+select * from Customer where Country IS NULL;
+
+select * from Customer where PhoneNumber IS NOT NULL;
+
+# Part - 4
+
+
+

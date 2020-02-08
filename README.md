@@ -342,7 +342,7 @@ ___________________________________
 select * from Customer where Name LIKE '%om%';
 
 # _anycahr%
-## Here the first character can be anything and secon character must be 'o' and rest can be anything
+## Here the first character can be anything and second character must be 'o' and rest can be anything
 
 select * from Customer where Name LIKE '_o%';
 
@@ -364,5 +364,87 @@ select * from Customer where PhoneNumber IS NOT NULL;
 
 # Part - 4
 
+create table Employee
 
+(
 
+    EmpID int,
+    
+    EmpName varchar(255),
+    
+    Age int,
+    
+    PhoneNumber int,
+    
+    EmailID varchar(255),
+    
+    Address varchar(255),
+    
+    Salary int
+    
+);
+
+insert into Employee values(1, "Amit", 35, 1234567890, "a@gmail.com", "1 vddr", 100);
+
+insert into Employee values(2, "Mongo", 23, 1234567891, "b@gmail.com", "2 vddr", 200);
+
+insert into Employee values(3, "Amit", 34, 1234567890, "c@gmail.com", "3 vddr", 300);
+
+insert into Employee values(4, "Amit", 36, 1234567890, "d@gmail.com", "4 vddr", 600);
+
+insert into Employee values(5, "Amit", 38, 1234567890, "e@gmail.com", "5 vddr", 750);
+
+select * from Employee;
+
+select * from Employee where Salary > 1000000;
+
+______________________________
+
+# Max Min 
+
+select max(Salary) from Employee;
+
+select min(Salary) from Employee;
+
+## 2nd highest salary : 1 IQ
+____________________________
+
+### OuterQ(InnerQ)
+
+### first executed inner then outer
+
+select max(Salary) from Employee where Salary < (select max(Salary) from Employee);
+
+select min(Salary) from Employee where Salary > (select min(Salary) from Employee);
+
+### 3rd Hig Salary: 2 IQ
+### Nth Hig Sal: N-1 IQ
+
+ select max(Salary) from Employee where Salary < 
+ (select max(Salary) from Employee where Salary < 
+ (select max(Salary) from Employee));
+
+____________________________________
+## LIMIT
+
+### It gives top 2 row
+
+select * from Employee LIMIT 2; 
+
+### TOP salary
+
+select salary from Employee order by salary desc LIMIT 1-1,1; 
+
+### 2nd High salary
+
+select salary from Employee order by salary desc LIMIT 2-1,1;
+
+### 3nd High salary
+
+select salary from Employee order by salary desc LIMIT 3-1,1;
+
+### TOP and ROWNUM : Deprecated
+
+select TOP 2 from Employee;
+
+select * from Employee where ROWNUM<=2;
